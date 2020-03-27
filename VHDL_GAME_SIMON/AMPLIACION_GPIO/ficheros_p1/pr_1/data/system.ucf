@@ -1,0 +1,89 @@
+#  Avnet Spartan-6 LX9 MicroBoard
+Net fpga_0_USB_UART_RX_pin LOC=R7 | IOSTANDARD = LVCMOS33;
+Net fpga_0_USB_UART_TX_pin LOC=T7 | IOSTANDARD = LVCMOS33;
+Net fpga_0_LEDs_4Bits_GPIO_IO_O_pin<0> LOC=P4 | IOSTANDARD = LVCMOS18;
+Net fpga_0_LEDs_4Bits_GPIO_IO_O_pin<1> LOC=L6 | IOSTANDARD = LVCMOS18;
+Net fpga_0_LEDs_4Bits_GPIO_IO_O_pin<2> LOC=F5 | IOSTANDARD = LVCMOS18;
+Net fpga_0_LEDs_4Bits_GPIO_IO_O_pin<3> LOC=C2 | IOSTANDARD = LVCMOS18;
+Net fpga_0_DIP_Switch_4Bits_GPIO_IO_I_pin<0> LOC=B3 | IOSTANDARD = LVCMOS33 | PULLDOWN;
+Net fpga_0_DIP_Switch_4Bits_GPIO_IO_I_pin<1> LOC=A3 | IOSTANDARD = LVCMOS33 | PULLDOWN;
+Net fpga_0_DIP_Switch_4Bits_GPIO_IO_I_pin<2> LOC=B4 | IOSTANDARD = LVCMOS33 | PULLDOWN;
+Net fpga_0_DIP_Switch_4Bits_GPIO_IO_I_pin<3> LOC=A4 | IOSTANDARD = LVCMOS33 | PULLDOWN;
+Net fpga_0_SPI_FLASH_SCK_pin LOC=R15 | IOSTANDARD = LVCMOS33;
+Net fpga_0_SPI_FLASH_MISO_pin LOC=R13 | IOSTANDARD = LVCMOS33;
+Net fpga_0_SPI_FLASH_MOSI_pin LOC=T13 | IOSTANDARD = LVCMOS33;
+Net fpga_0_SPI_FLASH_SS_pin LOC=V3  | IOSTANDARD = LVCMOS33;
+Net fpga_0_SPI_FLASH_SPI_HOLDn_pin LOC=V14  | IOSTANDARD = LVCMOS33;
+Net fpga_0_SPI_FLASH_SPI_Wn_pin LOC=T14  | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_tx_clk_pin LOC =   H17 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rx_clk_pin LOC =   L15 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_crs_pin LOC =   N17 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_dv_pin LOC =   P17 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<0> LOC =   T17 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<1> LOC =   N16 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<2> LOC =   N15 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<3> LOC =   P18 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_col_pin LOC =   M18 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rx_er_pin LOC =   N18 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_rst_n_pin LOC =   T18 | IOSTANDARD = LVCMOS33 | TIG;
+Net fpga_0_Ethernet_MAC_PHY_tx_en_pin LOC =   L17 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_tx_data_pin<0> LOC =   K18 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_tx_data_pin<1> LOC =   K17 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_tx_data_pin<2> LOC =   J18 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_tx_data_pin<3> LOC =   J16 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_MDC_pin LOC =   M16 | IOSTANDARD = LVCMOS33;
+Net fpga_0_Ethernet_MAC_PHY_MDIO_pin LOC =   L18 | IOSTANDARD = LVCMOS33;
+Net fpga_0_CDCE913_I2C_Sda_pin LOC=U13  | IOSTANDARD = LVCMOS33 | PULLUP;
+Net fpga_0_CDCE913_I2C_Scl_pin LOC=P12  | IOSTANDARD = LVCMOS33 | PULLUP;
+Net fpga_0_clk_1_sys_clk_pin TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 66666.7 kHz;
+Net fpga_0_clk_1_sys_clk_pin TNM_NET = sys_clk_pin  |  LOC=K15 | IOSTANDARD = LVCMOS33;
+Net fpga_0_rst_1_sys_rst_pin TIG;
+Net fpga_0_rst_1_sys_rst_pin LOC=V4 | IOSTANDARD = LVCMOS33 | PULLDOWN;
+
+###### microblaze_0
+### Set Vccaux for S6LX9 MicroBoard to 3.3V ###
+CONFIG VCCAUX = "3.3" ;
+
+
+###### Ethernet_MAC
+### Pull-ups on RXD are necessary to set the PHY AD to 11110b.  ###
+###   Must keep the PHY from defaulting to PHY AD = 00000b      ###
+###   because this is Isolate Mode                              ###
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<0> PULLUP;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<1> PULLUP;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<2> PULLUP;
+Net fpga_0_Ethernet_MAC_PHY_rx_data_pin<3> PULLUP;
+
+#------------------------------------------
+# GPIO KEYPAD
+#	INPUT
+NET GPIO_KEYPAD_GPIO_IO_I_pin<0> LOC = K12 | IOSTANDARD = LVCMOS33;
+NET GPIO_KEYPAD_GPIO_IO_I_pin<1> LOC = K13 | IOSTANDARD = LVCMOS33;
+NET GPIO_KEYPAD_GPIO_IO_I_pin<2> LOC = F17 | IOSTANDARD = LVCMOS33;
+NET GPIO_KEYPAD_GPIO_IO_I_pin<3> LOC = F18 | IOSTANDARD = LVCMOS33;
+#	OUPUT
+NET GPIO_KEYPAD_GPIO2_IO_O_pin<0> LOC = H12 | IOSTANDARD = LVCMOS33;
+NET GPIO_KEYPAD_GPIO2_IO_O_pin<1> LOC = G13 | IOSTANDARD = LVCMOS33;
+NET GPIO_KEYPAD_GPIO2_IO_O_pin<2> LOC = E16 | IOSTANDARD = LVCMOS33;
+NET GPIO_KEYPAD_GPIO2_IO_O_pin<3> LOC = E18 | IOSTANDARD = LVCMOS33;
+#------------------------------------------
+
+#------------------------------------------
+# GPIO DISPLAY
+#	OUTPUT
+NET GPIO_DISPLAY_GPIO_IO_O_pin<0> LOC = F14 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<1> LOC = G14 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<2> LOC = F15 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<3> LOC = F16 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<4> LOC = C17 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<5> LOC = D18 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<6> LOC = D17 | IOSTANDARD = LVCMOS33;
+NET GPIO_DISPLAY_GPIO_IO_O_pin<7> LOC = C18 | IOSTANDARD = LVCMOS33;
+#------------------------------------------
+
+
+
+
+
+

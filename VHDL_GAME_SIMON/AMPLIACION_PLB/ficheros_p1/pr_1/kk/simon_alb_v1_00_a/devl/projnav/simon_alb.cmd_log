@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Xilinx/PRACTICAS_FPGA/P3_INTENTO2/ficheros_p1/pr_1/pcores/simon_alb_v1_00_a/devl/projnav/simon_alb.xst" -ofn "C:/Xilinx/PRACTICAS_FPGA/P3_INTENTO2/ficheros_p1/pr_1/pcores/simon_alb_v1_00_a/devl/projnav/simon_alb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 simon_alb.ngc simon_alb.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o simon_alb_map.ncd simon_alb.ngd simon_alb.pcf 
+map -intstyle ise -p xc6slx9-csg324-2 -w -ol high -t 1 -xt 0 -register_duplication off -global_opt off -ir off -pr off -lc off -power off -o simon_alb_map.ncd simon_alb.ngd simon_alb.pcf 

@@ -1,0 +1,112 @@
+WARNING:EDK:1557 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   /home/hipolito/docencia/albertogzlezisorna/FPGA/AMPLIACION_PLB/ficheros_p1/pr
+   _1/system.mhs line 191 - PARAMETER C_MEM_DM_WIDTH has value 8 specified in
+   MHS, but tcl is overriding the value to 2
+WARNING:EDK:1557 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   /home/hipolito/docencia/albertogzlezisorna/FPGA/AMPLIACION_PLB/ficheros_p1/pr
+   _1/system.mhs line 192 - PARAMETER C_MEM_DQS_WIDTH has value 8 specified in
+   MHS, but tcl is overriding the value to 2
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:mb_plb -
+/home/hipolito/docencia/albertogzlezisorna/FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/
+system.mhs line 77 - 2 master(s) : 11 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb -
+/home/hipolito/docencia/albertogzlezisorna/FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/
+system.mhs line 84 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb -
+/home/hipolito/docencia/albertogzlezisorna/FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/
+system.mhs line 91 - 1 master(s) : 1 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb_LMB_Wait -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/micr
+   oblaze_v7_30_a/data/microblaze_v2_1_0.mpd line 232 - No driver found. Port
+   will be driven to GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb_LMB_Wait -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/micr
+   oblaze_v7_30_a/data/microblaze_v2_1_0.mpd line 268 - No driver found. Port
+   will be driven to GND!
+WARNING:EDK:2098 - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 228 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2099 - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 221 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_reset CONNECTOR:bscan_reset -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 222 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_shift CONNECTOR:bscan_shift -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 223 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_update CONNECTOR:bscan_update -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 224 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_capture CONNECTOR:bscan_capture -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 225 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 226 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   /home/hipolito/opt/Xilinx/12.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_
+   v1_00_g/data/mdm_v2_1_0.mpd line 227 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Port present in Ethernet_MAC
+Did not find device sumary in microblaze_0's synthesis log file
+Did not find timing summary in microblaze_0's synthesis log file
+Did not find device sumary in mb_plb's synthesis log file
+Did not find timing summary in mb_plb's synthesis log file
+Did not find device sumary in ilmb's synthesis log file
+Did not find timing summary in ilmb's synthesis log file
+Did not find device sumary in dlmb's synthesis log file
+Did not find timing summary in dlmb's synthesis log file
+Did not find device sumary in dlmb_cntlr's synthesis log file
+Did not find timing summary in dlmb_cntlr's synthesis log file
+Did not find device sumary in ilmb_cntlr's synthesis log file
+Did not find timing summary in ilmb_cntlr's synthesis log file
+Did not find device sumary in lmb_bram's synthesis log file
+Did not find timing summary in lmb_bram's synthesis log file
+Did not find device sumary in USB_UART's synthesis log file
+Did not find timing summary in USB_UART's synthesis log file
+Did not find device sumary in LEDs_4Bits's synthesis log file
+Did not find timing summary in LEDs_4Bits's synthesis log file
+Did not find device sumary in DIP_Switch_4Bits's synthesis log file
+Did not find timing summary in DIP_Switch_4Bits's synthesis log file
+Did not find device sumary in SPI_FLASH's synthesis log file
+Did not find timing summary in SPI_FLASH's synthesis log file
+Did not find device sumary in MCB3_LPDDR's synthesis log file
+Did not find timing summary in MCB3_LPDDR's synthesis log file
+Did not find device sumary in Ethernet_MAC's synthesis log file
+Did not find timing summary in Ethernet_MAC's synthesis log file
+Did not find device sumary in CDCE913_I2C's synthesis log file
+Did not find timing summary in CDCE913_I2C's synthesis log file
+Did not find device sumary in clock_generator_0's synthesis log file
+Did not find timing summary in clock_generator_0's synthesis log file
+Did not find device sumary in mdm_0's synthesis log file
+Did not find timing summary in mdm_0's synthesis log file
+Did not find device sumary in proc_sys_reset_0's synthesis log file
+Did not find timing summary in proc_sys_reset_0's synthesis log file
+Did not find device sumary in GPIO_KEYPAD's synthesis log file
+Did not find timing summary in GPIO_KEYPAD's synthesis log file
+Did not find device sumary in GPIO_DISPLAY's synthesis log file
+Did not find timing summary in GPIO_DISPLAY's synthesis log file
+Did not find device sumary in simon_periferico_1's synthesis log file
+Did not find timing summary in simon_periferico_1's synthesis log file
+Conversion to XML complete.

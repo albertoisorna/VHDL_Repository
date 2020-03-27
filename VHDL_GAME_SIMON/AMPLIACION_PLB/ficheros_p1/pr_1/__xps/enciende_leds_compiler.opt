@@ -1,0 +1,22 @@
+microblaze_0
+ENCIENDE_LEDS_SOURCES = /cygdrive/c/Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/xgpio_tapp_example.c 
+ENCIENDE_LEDS_HEADERS = /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/emaclite_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/gpio_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/iic_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/spi_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/uartlite_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/xemaclite_example.h 
+ENCIENDE_LEDS_CC = mb-gcc
+ENCIENDE_LEDS_CC_SIZE = mb-size
+ENCIENDE_LEDS_CC_OPT = -O2
+ENCIENDE_LEDS_CFLAGS = 
+ENCIENDE_LEDS_CC_SEARCH = # -B
+ENCIENDE_LEDS_LIBPATH = -L./microblaze_0/lib/ # -L
+ENCIENDE_LEDS_INCLUDES = -I./microblaze_0/include/  -ITestApp_Peripheral_microblaze_0/src/ # -I
+ENCIENDE_LEDS_LFLAGS = # -l
+ENCIENDE_LEDS_LINKER_SCRIPT = 
+ENCIENDE_LEDS_CC_DEBUG_FLAG =  -g 
+ENCIENDE_LEDS_CC_PROFILE_FLAG = # -pg
+ENCIENDE_LEDS_CC_GLOBPTR_FLAG= # -mxl-gp-opt
+ENCIENDE_LEDS_MODE = executable
+ENCIENDE_LEDS_LIBG_OPT = -$(ENCIENDE_LEDS_MODE) microblaze_0
+ENCIENDE_LEDS_CC_INFERRED_FLAGS= -mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.30.a 
+ENCIENDE_LEDS_CC_START_ADDR_FLAG=  # -Wl,-defsym -Wl,_TEXT_START_ADDR=
+ENCIENDE_LEDS_CC_STACK_SIZE_FLAG=  # -Wl,-defsym -Wl,_STACK_SIZE=
+ENCIENDE_LEDS_CC_HEAP_SIZE_FLAG=  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(ENCIENDE_LEDS_CC_INFERRED_FLAGS)  \

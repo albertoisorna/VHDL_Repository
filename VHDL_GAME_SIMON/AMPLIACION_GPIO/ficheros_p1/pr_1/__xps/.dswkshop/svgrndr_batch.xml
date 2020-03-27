@@ -1,0 +1,40 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\microblaze_0.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\microblaze_0.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\mb_plb.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\mb_plb.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\mb_plb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\ilmb.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\ilmb.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\ilmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\dlmb.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\dlmb.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\dlmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\dlmb_cntlr.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\dlmb_cntlr.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\dlmb_cntlr.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\ilmb_cntlr.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\ilmb_cntlr.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\ilmb_cntlr.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\lmb_bram.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\lmb_bram.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\lmb_bram.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\USB_UART.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\USB_UART.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\USB_UART.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\LEDs_4Bits.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\LEDs_4Bits.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\LEDs_4Bits.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\DIP_Switch_4Bits.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\DIP_Switch_4Bits.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\DIP_Switch_4Bits.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\SPI_FLASH.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\SPI_FLASH.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\SPI_FLASH.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\MCB3_LPDDR.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\MCB3_LPDDR.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\MCB3_LPDDR.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\Ethernet_MAC.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\Ethernet_MAC.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\Ethernet_MAC.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\CDCE913_I2C.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\CDCE913_I2C.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\CDCE913_I2C.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\clock_generator_0.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\clock_generator_0.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\mdm_0.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\mdm_0.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\mdm_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\proc_sys_reset_0.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\proc_sys_reset_0.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Xilinx\sepa\report\imgs\system_blkd.jpg" SVGNAME="C:\Xilinx\sepa\report\imgs\system_blkd.svg" TMPSVGFN="C:\Xilinx\sepa\__xps\.dswkshop\system_blkd.svg"/>
+
+</RENDERBATCH>

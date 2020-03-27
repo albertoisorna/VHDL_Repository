@@ -1,0 +1,10 @@
+-batch 
+-create simon_periferico 
+-ver 1.00.a 
+-dir "C:\Xilinx\PRACTICAS_FPGA\P3_INTENTO2\ficheros_p1\pr_1" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 6 
+-xps 
+-ise 
+-driver 

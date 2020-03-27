@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Xilinx\PRACTICAS_FPGA\P3_INTENTO2\ficheros_p1\pr_1\pcores\simon_alb_v1_00_a\devl\synthesis\simon_alb_xst.prj"
+-top simon_alb
+-p virtex5
+-ofn "C:\Xilinx\PRACTICAS_FPGA\P3_INTENTO2\ficheros_p1\pr_1\pcores\simon_alb_v1_00_a\devl\synthesis\simon_alb_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib simon_alb_v1_00_a

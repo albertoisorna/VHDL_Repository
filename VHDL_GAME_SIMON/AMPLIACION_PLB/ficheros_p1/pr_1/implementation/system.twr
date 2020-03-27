@@ -1,0 +1,213 @@
+--------------------------------------------------------------------------------
+Release 12.1 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml system.twx
+system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc6slx9,csg324,C,-2 (ADVANCED 1.08 2010-04-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i" MAXSKEW = 6 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net skew is   2.357ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i" PERIOD = 40 ns 
+HIGH 14 ns;
+
+ 168 paths analyzed, 102 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  18.842ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF" MAXSKEW = 6 
+ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net skew is   3.267ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF" PERIOD = 40 ns 
+HIGH 14 ns;
+
+ 150 paths analyzed, 136 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.311ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TSTXOUT_Ethernet_MAC = MAXDELAY FROM TIMEGRP 
+"TXCLK_GRP_Ethernet_MAC" TO         TIMEGRP "PADS" 10 ns;
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   4.111ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 66.6667 MHz 
+HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.999ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHz180PLL0_nobuf = PERIOD TIMEGRP         
+"clk_400_0000MHz180PLL0_nobuf" TS_sys_clk_pin * 6 PHASE 1.25 ns HIGH         
+50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.500ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHzPLL0_nobuf = PERIOD TIMEGRP 
+"clk_400_0000MHzPLL0_nobuf"         TS_sys_clk_pin * 6 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.500ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2 = 
+PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2" 
+TS_sys_clk_pin         HIGH 50%;
+
+ 229888 paths analyzed, 17616 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  13.155ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: OFFSET = IN 6 ns BEFORE COMP 
+"fpga_0_Ethernet_MAC_PHY_rx_clk_pin";
+
+ 6 paths analyzed, 6 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Offset is  -0.458ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     15.000ns|      4.999ns|     13.155ns|            0|            0|            0|       229888|
+| TS_clk_400_0000MHz180PLL0_nobu|      2.500ns|      0.500ns|          N/A|            0|            0|            0|            0|
+| f                             |             |             |             |             |             |             |             |
+| TS_clk_400_0000MHzPLL0_nobuf  |      2.500ns|      0.500ns|          N/A|            0|            0|            0|            0|
+| TS_clock_generator_0_clock_gen|     15.000ns|     13.155ns|          N/A|            0|            0|       229888|            0|
+| erator_0_SIG_PLL0_CLKOUT2     |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock fpga_0_Ethernet_MAC_PHY_rx_clk_pin
+--------------------------------------+------------+------------+------------+------------+---------------------------------------+--------+
+                                      |Max Setup to|  Process   |Max Hold to |  Process   |                                       | Clock  |
+Source                                | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                      | Phase  |
+--------------------------------------+------------+------------+------------+------------+---------------------------------------+--------+
+fpga_0_Ethernet_MAC_PHY_dv_pin        |   -0.458(R)|      FAST  |    2.476(R)|      SLOW  |fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_rx_data_pin<0>|   -0.458(R)|      FAST  |    2.476(R)|      SLOW  |fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_rx_data_pin<1>|   -0.489(R)|      FAST  |    2.637(R)|      SLOW  |fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_rx_data_pin<2>|   -0.458(R)|      FAST  |    2.476(R)|      SLOW  |fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_rx_data_pin<3>|   -0.511(R)|      FAST  |    2.800(R)|      SLOW  |fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF|   0.000|
+fpga_0_Ethernet_MAC_PHY_rx_er_pin     |   -0.482(R)|      FAST  |    2.630(R)|      SLOW  |fpga_0_Ethernet_MAC_PHY_rx_clk_pin_IBUF|   0.000|
+--------------------------------------+------------+------------+------------+------------+---------------------------------------+--------+
+
+Clock fpga_0_Ethernet_MAC_PHY_tx_clk_pin to Pad
+--------------------------------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+                                      |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination                           |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+--------------------------------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<0>|         9.075(F)|      SLOW  |         4.020(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<1>|         9.075(F)|      SLOW  |         4.020(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<2>|         8.580(F)|      SLOW  |         3.801(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+fpga_0_Ethernet_MAC_PHY_tx_data_pin<3>|         8.580(F)|      SLOW  |         3.801(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+fpga_0_Ethernet_MAC_PHY_tx_en_pin     |         9.202(F)|      SLOW  |         4.103(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+--------------------------------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock to Setup on destination clock fpga_0_Ethernet_MAC_PHY_rx_clk_pin
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+fpga_0_Ethernet_MAC_PHY_rx_clk_pin|         |         |    2.909|    4.973|
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_Ethernet_MAC_PHY_tx_clk_pin
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+fpga_0_Ethernet_MAC_PHY_tx_clk_pin|    5.066|         |    6.595|         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_clk_1_sys_clk_pin
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+fpga_0_clk_1_sys_clk_pin|   13.155|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 230217 paths, 2 nets, and 21134 connections
+
+Design statistics:
+   Minimum period:  18.842ns   (Maximum frequency:  53.073MHz)
+   Maximum path delay from/to any node:   4.111ns
+   Maximum net skew:   3.267ns
+
+
+Analysis completed Wed Jan 10 16:05:28 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 305 MB
+
+
+

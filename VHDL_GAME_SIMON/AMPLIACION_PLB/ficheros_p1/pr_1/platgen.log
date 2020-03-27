@@ -1,0 +1,481 @@
+Release 12.1 - platgen Xilinx EDK 12.1 Build EDK_MS1.53d
+ (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc6slx9csg324-2 -lang vhdl -msg __xps/ise/xmsgprops.lst
+system.mhs 
+
+WARNING:EDK - INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable
+   is set to '2100@freyja.us.es'.
+   INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+   WARNING:Security:43 - No license file was found in the standard Xilinx
+   license directory.
+   WARNING:Security:44 - No license file was found.
+          Please run the Xilinx License Configuration Manager
+          (xlcm or "Manage Xilinx Licenses")
+          to assist in obtaining a license.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse C:/Xilinx/ALBERTO/AMPLIACION_PLB_v2/ficheros_p1/pr_1/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 143 - tcl is overriding PARAMETER C_BASEFAMILY value to
+   spartan6
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 148 - tcl is overriding PARAMETER C_SPEEDGRADE_INT value
+   to 2
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 170 - tcl is overriding PARAMETER C_IODELAY_GRP value to
+   MCB3_LPDDR
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 252 - tcl is overriding PARAMETER C_MEM_PART_DATA_DEPTH
+   value to 32
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 253 - tcl is overriding PARAMETER C_MEM_PART_DATA_WIDTH
+   value to 16
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 256 - tcl is overriding PARAMETER C_MEM_PART_NUM_COL_BITS
+   value to 10
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 257 - tcl is overriding PARAMETER C_MEM_PART_TRAS value to
+   40000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 258 - tcl is overriding PARAMETER C_MEM_PART_TRASMAX value
+   to 70200000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 259 - tcl is overriding PARAMETER C_MEM_PART_TRC value to
+   55000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 260 - tcl is overriding PARAMETER C_MEM_PART_TRCD value to
+   15000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 262 - tcl is overriding PARAMETER C_MEM_PART_TWR value to
+   15000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 263 - tcl is overriding PARAMETER C_MEM_PART_TRP value to
+   15000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 264 - tcl is overriding PARAMETER C_MEM_PART_TMRD value to
+   2
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 265 - tcl is overriding PARAMETER C_MEM_PART_TRRD value to
+   10000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 266 - tcl is overriding PARAMETER C_MEM_PART_TRFC value to
+   97500
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 267 - tcl is overriding PARAMETER C_MEM_PART_TREFI value
+   to 7800000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 269 - tcl is overriding PARAMETER C_MEM_PART_TCCD value to
+   1
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 270 - tcl is overriding PARAMETER C_MEM_PART_TWTR value to
+   2
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 276 - tcl is overriding PARAMETER C_MEM_PART_CAS_A_FMAX
+   value to 83.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 277 - tcl is overriding PARAMETER C_MEM_PART_CAS_A value
+   to 2
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 278 - tcl is overriding PARAMETER C_MEM_PART_CAS_B_FMAX
+   value to 200.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 279 - tcl is overriding PARAMETER C_MEM_PART_CAS_B value
+   to 3
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 280 - tcl is overriding PARAMETER C_MEM_PART_CAS_C_FMAX
+   value to 1.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 282 - tcl is overriding PARAMETER C_MEM_PART_CAS_D_FMAX
+   value to 1.0
+WARNING:EDK:1557 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 191 -
+   PARAMETER C_MEM_DM_WIDTH has value 8 specified in MHS, but tcl is overriding
+   the value to 2
+WARNING:EDK:1557 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 192 -
+   PARAMETER C_MEM_DQS_WIDTH has value 8 specified in MHS, but tcl is overriding
+   the value to 2
+orig_family is spartan6
+INFO:EDK:1560 - IPNAME:xps_ethernetlite INSTANCE:Ethernet_MAC -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 69 - tcl is overriding PARAMETER
+   C_FAMILY value to spartan6
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00001fff) dlmb_cntlr	dlmb
+  (0000000000-0x00001fff) ilmb_cntlr	ilmb
+  (0x81000000-0x8100ffff) Ethernet_MAC	mb_plb
+  (0x81400000-0x8140ffff) LEDs_4Bits	mb_plb
+  (0x81420000-0x8142ffff) DIP_Switch_4Bits	mb_plb
+  (0x81600000-0x8160ffff) CDCE913_I2C	mb_plb
+  (0x83400000-0x8340ffff) SPI_FLASH	mb_plb
+  (0x84000000-0x8400ffff) USB_UART	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0x8630c000-0x8630c1ff) GPIO_KEYPAD	mb_plb
+  (0x88208000-0x882081ff) simon_periferico_1	mb_plb
+  (0x8a104200-0x8a1043ff) GPIO_DISPLAY	mb_plb
+  (0x8c000000-0x8fffffff) MCB3_LPDDR	mb_plb
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 355 - tool is overriding PARAMETER C_SPLB0_P2P value to 0
+
+Computing clock values...
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:mb_plb -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_04_a\data
+   \plb_v46_v2_1_0.mpd line 68 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:mb_plb -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_04_a\data
+   \plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 11
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:mb_plb -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_04_a\data
+   \plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_PLBV46_MID_WIDTH
+   value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:mb_plb -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_04_a\data
+   \plb_v46_v2_1_0.mpd line 72 - tool is overriding PARAMETER C_PLBV46_DWIDTH
+   value to 32
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:ilmb -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data
+   \lmb_v10_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:dlmb -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v1_00_a\data
+   \lmb_v10_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:lmb_bram -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x2000
+INFO:EDK:1560 - IPNAME:xps_uartlite INSTANCE:USB_UART -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_01_a
+   \data\xps_uartlite_v2_1_0.mpd line 74 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:xps_gpio INSTANCE:LEDs_4Bits -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 72 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:xps_gpio INSTANCE:DIP_Switch_4Bits -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 72 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:xps_spi INSTANCE:SPI_FLASH -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_spi_v2_01_b\data
+   \xps_spi_v2_1_0.mpd line 74 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS
+   value to 2
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 351 - tool is overriding PARAMETER C_SPLB0_DWIDTH value to
+   32
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 353 - tool is overriding PARAMETER C_SPLB0_NUM_MASTERS
+   value to 2
+INFO:EDK:1560 - IPNAME:xps_ethernetlite INSTANCE:Ethernet_MAC -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_ethernetlite_v4_
+   00_a\data\xps_ethernetlite_v2_1_0.mpd line 77 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:xps_iic INSTANCE:CDCE913_I2C -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_iic_v2_03_a\data
+   \xps_iic_v2_1_0.mpd line 75 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS
+   value to 2
+INFO:EDK:1560 - IPNAME:mdm INSTANCE:mdm_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 86 - tool is overriding PARAMETER C_SPLB_MID_WIDTH value to
+   1
+INFO:EDK:1560 - IPNAME:mdm INSTANCE:mdm_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 87 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS value
+   to 2
+INFO:EDK:1560 - IPNAME:xps_gpio INSTANCE:GPIO_KEYPAD -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 72 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:xps_gpio INSTANCE:GPIO_DISPLAY -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 72 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:simon_periferico INSTANCE:simon_periferico_1 -
+   C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\pcores\simon_periferico_
+   v1_01_a\data\simon_periferico_v2_1_0.mpd line 26 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:simon_periferico INSTANCE:simon_periferico_1 -
+   C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\pcores\simon_periferico_
+   v1_01_a\data\simon_periferico_v2_1_0.mpd line 27 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:simon_periferico INSTANCE:simon_periferico_1 -
+   C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\pcores\simon_periferico_
+   v1_01_a\data\simon_periferico_v2_1_0.mpd line 28 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1
+
+Checking platform address map ...
+
+Checking platform configuration ...
+INFO:EDK:1563 - IPNAME:xps_ethernetlite INSTANCE:Ethernet_MAC -
+   C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 220 -
+   This design requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation.
+IPNAME:plb_v46 INSTANCE:mb_plb -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 77 - 2
+master(s) : 11 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 84 - 1
+master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 91 - 1
+master(s) : 1 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb_LMB_Wait -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 232 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb_LMB_Wait -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 268 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 228 - No driver found. Port will be driven to GND!
+WARNING:EDK:2099 - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 221 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_reset CONNECTOR:bscan_reset -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 222 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_shift CONNECTOR:bscan_shift -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 223 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_update CONNECTOR:bscan_update -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 224 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_capture CONNECTOR:bscan_capture -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 225 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 226 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v1_00_g\data\mdm
+   _v2_1_0.mpd line 227 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 155 - tcl is overriding PARAMETER C_D_PLB
+   value to 1
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 157 - tcl is overriding PARAMETER C_I_PLB
+   value to 1
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 190 - tcl is overriding PARAMETER
+   C_ADDR_TAG_BITS value to 0
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 202 - tcl is overriding PARAMETER
+   C_DCACHE_ADDR_TAG value to 0
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 216 - tcl is overriding PARAMETER
+   C_USE_EXT_BRK value to 1
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze_0 -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v7_30_a\d
+   ata\microblaze_v2_1_0.mpd line 217 - tcl is overriding PARAMETER
+   C_USE_EXT_NM_BRK value to 1
+INFO:EDK:1560 - IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2
+   _10_b\data\lmb_bram_if_cntlr_v2_1_0.mpd line 75 - tcl is overriding PARAMETER
+   C_MASK value to 0x80000000
+INFO:EDK:1560 - IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v2
+   _10_b\data\lmb_bram_if_cntlr_v2_1_0.mpd line 75 - tcl is overriding PARAMETER
+   C_MASK value to 0x80000000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:MCB3_LPDDR -
+   C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_00_a\data\mp
+   mc_v2_1_0.mpd line 347 - tcl is overriding PARAMETER C_PIM0_B_SUBTYPE value
+   to PLB
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Port present in Ethernet_MAC
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The MCB3_LPDDR core has constraints automatically generated by XPS in
+implementation/mcb3_lpddr_wrapper/mcb3_lpddr_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The Ethernet_MAC core has constraints automatically generated by XPS in
+implementation/ethernet_mac_wrapper/ethernet_mac_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 116 -
+elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 250 -
+elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:2502 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:microblaze_0 -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 65 -
+Running XST synthesis
+INSTANCE:mb_plb -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 77 -
+Running XST synthesis
+INSTANCE:ilmb - C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs
+line 84 - Running XST synthesis
+INSTANCE:dlmb - C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs
+line 91 - Running XST synthesis
+INSTANCE:dlmb_cntlr -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 98 -
+Running XST synthesis
+INSTANCE:ilmb_cntlr -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 107 -
+Running XST synthesis
+INSTANCE:lmb_bram -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 116 -
+Running XST synthesis
+INSTANCE:usb_uart -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 123 -
+Running XST synthesis
+INSTANCE:leds_4bits -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 137 -
+Running XST synthesis
+INSTANCE:dip_switch_4bits -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 150 -
+Running XST synthesis
+INSTANCE:spi_flash -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 163 -
+Running XST synthesis
+INSTANCE:mcb3_lpddr -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 180 -
+Running XST synthesis
+INSTANCE:ethernet_mac -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 220 -
+Running XST synthesis
+INSTANCE:cdce913_i2c -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 240 -
+Running XST synthesis
+INSTANCE:clock_generator_0 -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 250 -
+Running XST synthesis
+INSTANCE:mdm_0 - C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs
+line 275 - Running XST synthesis
+INSTANCE:proc_sys_reset_0 -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 288 -
+Running XST synthesis
+INSTANCE:gpio_keypad -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 301 -
+Running XST synthesis
+INSTANCE:gpio_display -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 315 -
+Running XST synthesis
+INSTANCE:simon_periferico_1 -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 325 -
+Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:usb_uart_wrapper INSTANCE:usb_uart -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 123 -
+Running NGCBUILD
+IPNAME:mcb3_lpddr_wrapper INSTANCE:mcb3_lpddr -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 180 -
+Running NGCBUILD
+IPNAME:ethernet_mac_wrapper INSTANCE:ethernet_mac -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 220 -
+Running NGCBUILD
+IPNAME:clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+C:\Xilinx\ALBERTO\AMPLIACION_PLB_v2\ficheros_p1\pr_1\system.mhs line 250 -
+Running NGCBUILD
+
+Rebuilding cache ...
+
+Total run time: 120.00 seconds

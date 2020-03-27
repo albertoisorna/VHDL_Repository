@@ -1,0 +1,22 @@
+microblaze_0
+SIMON_SOURCES = /cygdrive/c/Xilinx/ALBERTO/AMPLIACION_PLB_v2/ficheros_p1/pr_1/simon/src/simon_berto.c 
+SIMON_HEADERS = /cygdrive/c//Xilinx/ALBERTO/AMPLIACION_PLB_v2/ficheros_p1/pr_1/simon/src/alberto_KEYPAD3.h /cygdrive/c//Xilinx/ALBERTO/AMPLIACION_PLB_v2/ficheros_p1/pr_1/simon/src/alberto_DISPLAY_GPIO.h 
+SIMON_CC = mb-gcc
+SIMON_CC_SIZE = mb-size
+SIMON_CC_OPT = -O2
+SIMON_CFLAGS = 
+SIMON_CC_SEARCH = # -B
+SIMON_LIBPATH = -L./microblaze_0/lib/ # -L
+SIMON_INCLUDES = -I./microblaze_0/include/  -Isimon/src/ # -I
+SIMON_LFLAGS = # -l
+SIMON_LINKER_SCRIPT = 
+SIMON_CC_DEBUG_FLAG =  -g 
+SIMON_CC_PROFILE_FLAG = # -pg
+SIMON_CC_GLOBPTR_FLAG= # -mxl-gp-opt
+SIMON_MODE = executable
+SIMON_LIBG_OPT = -$(SIMON_MODE) microblaze_0
+SIMON_CC_INFERRED_FLAGS= -mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.30.a 
+SIMON_CC_START_ADDR_FLAG=  # -Wl,-defsym -Wl,_TEXT_START_ADDR=
+SIMON_CC_STACK_SIZE_FLAG=  # -Wl,-defsym -Wl,_STACK_SIZE=
+SIMON_CC_HEAP_SIZE_FLAG=  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(SIMON_CC_INFERRED_FLAGS)  \

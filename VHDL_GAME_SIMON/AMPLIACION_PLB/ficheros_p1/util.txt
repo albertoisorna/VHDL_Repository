@@ -1,0 +1,4 @@
+http://fpgacenter.com/examples/MyFirstMicroblaze/index.php
+
+
+ruta FICHEROS PLACA: C:\Xilinx\12.1\ISE_DS\EDK\board

@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx9csg324-2
+-top gpio_keypad_wrapper
+-ifmt MIXED
+-ifn gpio_keypad_wrapper_xst.prj
+-ofn ../implementation/gpio_keypad_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/gpio_keypad_wrapper}
+-vlgincdir {"C:\Xilinx\PRACTICAS_FPGA\P3_INTENTO2\ficheros_p1\pr_1\pcores\" "C:\Xilinx\12.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

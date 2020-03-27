@@ -1,0 +1,16 @@
+Release 12.1 - WebTalk (M.53d)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=785cb457098e4d068798a8519ca65742
+ProjectIteration=2
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:5 - C:/Xilinx/PRACTICAS_FPGA/P3_INTENTO2/ficheros_p1/pr_1/implementation/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/12.1/ISE_DS/ISE/data/reports/webtalk_introduction.html

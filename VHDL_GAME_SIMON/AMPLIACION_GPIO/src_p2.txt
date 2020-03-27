@@ -1,0 +1,339 @@
+
+
+/***************************** Include Files ********************************/
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "stdio.h"
+#include "xstatus.h"
+
+/************************** Constant Definitions ****************************/
+
+/*
+ * The following constant is used to wait after an LED is turned on to make
+ * sure that it is visible to the human eye.  This constant might need to be
+ * tuned for faster or slower processor speeds.
+ */
+#define LED_DELAY	  1000000
+
+/* following constant is used to determine which channel of the GPIO is
+ * used if there are 2 channels supported in the GPIO.
+ */
+#define LED_CHANNEL XPAR_LEDS_4BITS_DEVICE_ID // parameters.h
+
+#define LED_MAX_BLINK	0x1	/* Number of times the LED Blinks */
+
+#define GPIO_BITWIDTH	4	/* This is the width of the GPIO */
+
+#define printf xil_printf	/* A smaller footprint printf */
+
+
+#define GPIO_OUTPUT_DEVICE_ID	XPAR_LEDS_4BITS_DEVICE_ID
+#define GPIO_INPUT_DEVICE_ID	XPAR_LEDS_4BITS_DEVICE_ID
+
+/**************************** Type Definitions ******************************/
+
+
+/***************** Macros (Inline Functions) Definitions *******************/
+
+
+/************************** Function Prototypes ****************************/
+
+int GpioOutputExample(u16 DeviceId, u32 GpioWidth);
+
+int GpioInputExample(u16 DeviceId, u32 *DataRead);
+
+void GpioDriverHandler(void *CallBackRef);
+
+// funciones propias
+int enciendeleds (u16 DeviceId, u8 mask);
+void enciendeled_concreto (u16 DeviceId,char led);
+void espera (int n_seg);
+
+
+
+
+char leePKMOD ();
+int num_fila();
+
+// keypad
+#define KEYPAD_INPUT 1
+#define KEYPAD_OUTPUT 2
+
+/************************** Variable Definitions **************************/
+
+/*
+ * The following are declared globally so they are zeroed and so they are
+ * easily accessible from a debugger
+ */
+XGpio GpioOutput; /* The driver instance for GPIO Device configured as O/P */
+XGpio GpioInput;  /* The driver instance for GPIO Device configured as I/P */
+
+/*****************************************************************************/
+/**
+* Main function to call the example.This function is not included if the
+* example is generated from the TestAppGen test tool.
+*
+* @param	None
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+******************************************************************************/
+char MATRIZ[4][4]={{'1','2','3','A'}, {'4','5','6','B'}, {'7','8','9','C'}, {'*','0','#','D'}};
+
+
+int main(void)
+{
+	int Status;
+	u32 InputData;
+	
+	print("\n");
+	
+	
+
+	/*Status = GpioInputExample(GPIO_INPUT_DEVICE_ID, &InputData);
+	if (Status != XST_SUCCESS) {
+		  return XST_FAILURE;
+	}*/
+	
+	enciendeleds (GPIO_OUTPUT_DEVICE_ID,0xE);
+	
+	
+	
+	print(".......");
+	print("NUM is");
+	print(num);
+}
+
+
+/*****************************************************************************/
+/**
+*
+* This function does a minimal test on the GPIO device configured as OUTPUT
+* and driver as a  example.
+*
+*
+* @param	DeviceId is the XPAR_<GPIO_instance>_DEVICE_ID value from
+*		xparameters.h
+* @param	GpioWidth is the width of the GPIO
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+****************************************************************************/
+
+void espera (int n_seg)
+{
+	volatile int Delay;
+	int T;
+	
+	T=66000000*n_seg;
+	
+	for (Delay = 0; Delay < T; Delay++)
+		asm("nop");
+}
+
+int enciendeleds (u16 DeviceId,u8 mask)
+{
+	u32 Data;
+	volatile int Delay;
+	u32 LedLoop;
+	int Status;
+
+	//  Initialize the GPIO driver so that it's ready to use,
+	//  specify the device ID that is generated in xparameters.h
+	 Status = XGpio_Initialize(&GpioOutput, DeviceId);
+	 if (Status != XST_SUCCESS)  
+		  return XST_FAILURE;
+	 //Set the direction for all signals to be outputs
+	 XGpio_SetDataDirection(&GpioOutput, LED_CHANNEL, 0x0); 
+	 //  Set the GPIO outputs to low
+	 XGpio_DiscreteWrite(&GpioOutput, LED_CHANNEL, 0x0);
+	 
+		for (LedLoop = 0; LedLoop < LED_MAX_BLINK; LedLoop++) 
+		{
+			XGpio_DiscreteWrite(&GpioOutput, LED_CHANNEL,mask);
+			for (Delay = 0; Delay < LED_DELAY; Delay++)
+			asm("nop");
+			/*XGpio_DiscreteClear(&GpioOutput, LED_CHANNEL,mask);
+			for (Delay = 0; Delay < LED_DELAY; Delay++)
+			asm("nop");*/
+		}
+	 return XST_SUCCESS;
+}
+
+void enciendeled_concreto (u16 DeviceId,char led)
+{
+	switch (led)
+	{
+		case 0: enciendeleds (GPIO_OUTPUT_DEVICE_ID,0x0);
+		case 1: enciendeleds (GPIO_OUTPUT_DEVICE_ID,0x1);
+		case 2: enciendeleds (GPIO_OUTPUT_DEVICE_ID,0x2);
+		case 3: enciendeleds (GPIO_OUTPUT_DEVICE_ID,0x4);
+		case 4: enciendeleds (GPIO_OUTPUT_DEVICE_ID,0x8);
+		default: enciendeleds (GPIO_OUTPUT_DEVICE_ID,0xF);
+	}
+}
+
+int GpioOutputExample(u16 DeviceId, u32 GpioWidth)
+{
+	u32 Data;
+	volatile int Delay;
+	u32 LedBit;
+	u32 LedLoop;
+	int Status;
+
+	/*
+	 * Initialize the GPIO driver so that it's ready to use,
+	 * specify the device ID that is generated in xparameters.h
+	 */
+	 Status = XGpio_Initialize(&GpioOutput, DeviceId);
+	 if (Status != XST_SUCCESS)  {
+		  return XST_FAILURE;
+	 }
+	 //Set the direction for all signals to be outputs
+	 XGpio_SetDataDirection(&GpioOutput, LED_CHANNEL, 0x0);
+	 //Set the GPIO outputs to low
+	 XGpio_DiscreteWrite(&GpioOutput, LED_CHANNEL, 0x0);
+
+	 for (LedBit = 0x0; LedBit < GpioWidth; LedBit++)  {
+
+		for (LedLoop = 0; LedLoop < LED_MAX_BLINK; LedLoop++) {
+
+			/*
+			 * Set the GPIO Output to High
+			 */
+			XGpio_DiscreteWrite(&GpioOutput, LED_CHANNEL,
+						1 << LedBit);
+
+#ifndef __SIM__
+			/*
+			 * Wait a small amount of time so the LED is visible
+			 */
+			for (Delay = 0; Delay < LED_DELAY; Delay++);
+
+#endif
+			/*
+			 * Clear the GPIO Output
+			 */
+			XGpio_DiscreteClear(&GpioOutput, LED_CHANNEL,
+						1 << LedBit);
+
+
+#ifndef __SIM__
+			/*
+			 * Wait a small amount of time so the LED is visible
+			 */
+			for (Delay = 0; Delay < LED_DELAY; Delay++);
+#endif
+
+		  }
+
+	 }
+
+	 return XST_SUCCESS;
+
+}
+
+
+/******************************************************************************/
+/**
+*
+* This function  performs a test on the GPIO driver/device with the GPIO
+* configured as INPUT
+*
+* @param	 DeviceId is the XPAR_<GPIO_instance>_DEVICE_ID value from
+*			  xparameters.h
+* @param	 DataRead is the pointer where the data read from GPIO Input is
+*			  returned
+*
+* @return	XST_SUCCESS if the Test is successful, otherwise XST_FAILURE
+*
+* @note	  None.
+*
+******************************************************************************/
+int GpioInputExample(u16 DeviceId, u32 *DataRead)
+{
+	 int Status;
+
+	 /*
+	  * Initialize the GPIO driver so that it's ready to use,
+	  * specify the device ID that is generated in xparameters.h
+	  */
+	  
+	  
+	 Status = XGpio_Initialize(&GpioInput, DeviceId);
+	 if (Status != XST_SUCCESS) {
+		  return XST_FAILURE;
+	 }
+	//Set the direction for all signals to be inputs
+	 XGpio_SetDataDirection(&GpioInput, LED_CHANNEL, 0xFFFFFFFF);
+	// Read the state of the data so that it can be  verified
+	 *DataRead = XGpio_DiscreteRead(&GpioInput, LED_CHANNEL);
+	 return XST_SUCCESS;
+}
+
+
+char leePKMOD ()
+{
+	int Status;
+	char num='X';
+	XGpio KYPAD_XGPIO;
+	int col,fil;
+	u8 NCOL;
+	
+	//iniciamos el keypad
+	inicia_keypad(KYPAD_XGPIO);
+	// ponemos a cero
+	XGpio_DiscreteWrite(&GpioOutput, KEYPAD_OUTPUT, 0x0);
+	// bucle
+	for (col=0;col<4;i++)
+	{
+	XGpio_DiscreteWrite(&GpioOutput, KEYPAD_OUTPUT, ~(1 << NCOL)); // ponemos un cero
+	
+	fil=num_fila();
+	num=MATRIZ[col][fil];
+	print (num);
+	if (num!=0) break;
+   XGpio_DiscreteClear(&GpioOutput, KEYPAD_OUTPUT,~(1 << NCOL));
+	}
+	return num;
+}
+
+int inicia_keypad(XGpio KYPAD_XGPIO)
+{
+	// inicializamos inputs FIL y outputs COL
+	Status = XGpio_Initialize(&KYPAD_XGPIO, XPAR_GPIO_KEYPAD_DEVICE_ID); 
+	 if (Status != XST_SUCCESS)
+	 return XST_FAILURE;
+	// col
+	XGpio_SetDataDirection(&KYPAD_XGPIO,KEYPAD_INPUT,0xF);
+	// fil
+	XGpio_SetDataDirection(&KYPAD_XGPIO,KEYPAD_OUTPUT,0x0);
+	return XST_SUCCESS;
+}
+
+int num_fila()
+{
+int fila=0;
+int dato;
+int result=0;
+
+dato=XGpio_DiscreteRead(&GpioInput, LED_CHANNEL); // ej 0000000 1101  (32 bits (26 + 4 de las filas))
+dato=~dato;    // 1111111 0010
+result=dato&0xF; // 0000000 0010
+// cambio de one hot a bin
+switch(result)
+	{
+	case 0: break;
+	case 1: break;
+	case 2: break;
+	case 4: result=3; break;
+	case 8: result=4; break;
+	default: result=-1; break;
+	}
+return result;
+}

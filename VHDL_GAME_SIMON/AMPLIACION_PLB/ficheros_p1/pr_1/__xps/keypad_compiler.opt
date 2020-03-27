@@ -1,0 +1,22 @@
+microblaze_0
+KEYPAD_SOURCES = /cygdrive/c/Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/KEYPAD/KEYPAD.c 
+KEYPAD_HEADERS = /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/emaclite_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/gpio_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/iic_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/spi_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/uartlite_header.h /cygdrive/c//Xilinx/PRACTICAS_FPGA/AMPLIACION_PLB/ficheros_p1/pr_1/TestApp_Peripheral_microblaze_0/src/xemaclite_example.h 
+KEYPAD_CC = mb-gcc
+KEYPAD_CC_SIZE = mb-size
+KEYPAD_CC_OPT = -O2
+KEYPAD_CFLAGS = 
+KEYPAD_CC_SEARCH = # -B
+KEYPAD_LIBPATH = -L./microblaze_0/lib/ # -L
+KEYPAD_INCLUDES = -I./microblaze_0/include/  -ITestApp_Peripheral_microblaze_0/src/ # -I
+KEYPAD_LFLAGS = # -l
+KEYPAD_LINKER_SCRIPT = 
+KEYPAD_CC_DEBUG_FLAG =  -g 
+KEYPAD_CC_PROFILE_FLAG = # -pg
+KEYPAD_CC_GLOBPTR_FLAG= # -mxl-gp-opt
+KEYPAD_MODE = executable
+KEYPAD_LIBG_OPT = -$(KEYPAD_MODE) microblaze_0
+KEYPAD_CC_INFERRED_FLAGS= -mno-xl-soft-mul -mxl-pattern-compare -mcpu=v7.30.a 
+KEYPAD_CC_START_ADDR_FLAG=  # -Wl,-defsym -Wl,_TEXT_START_ADDR=
+KEYPAD_CC_STACK_SIZE_FLAG=  # -Wl,-defsym -Wl,_STACK_SIZE=
+KEYPAD_CC_HEAP_SIZE_FLAG=  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(KEYPAD_CC_INFERRED_FLAGS)  \

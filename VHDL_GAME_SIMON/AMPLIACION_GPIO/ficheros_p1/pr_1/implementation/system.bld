@@ -1,0 +1,132 @@
+Release 12.1 ngdbuild M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\12.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc6slx9csg324-2 -nt timestamp -bm system.bmm
+C:/Xilinx/PRACTICAS_FPGA/P3_INTENTO2/ficheros_p1/pr_1/implementation/system.ngc
+-uc system.ucf system.ngd
+
+Reading NGO file
+"C:/Xilinx/PRACTICAS_FPGA/P3_INTENTO2/ficheros_p1/pr_1/implementation/system.ngc
+" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "fpga_0_MCB3_LPDDR_rzq_pin"
+   IOSTANDARD = "MOBILE_DDR">: This constraint cannot be distributed from the
+   design objects matching 'NET: UniqueName:
+   /system/EXPANDED/fpga_0_MCB3_LPDDR_rzq_pin' because those design objects do
+   not contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "fpga_0_MCB3_LPDDR_rzq_pin" LOC =
+   N4>: This constraint cannot be distributed from the design objects matching
+   'NET: UniqueName: /system/EXPANDED/fpga_0_MCB3_LPDDR_rzq_pin' because those
+   design objects do not contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "fpga_0_MCB3_LPDDR_rzq_pin" LOC = N4>' could not be found and so the
+   Locate constraint will be removed.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_clk_400_0000MHz180PLL0_nobuf = PERIOD
+   "clk_400_0000MHz180PLL0_nobuf" TS_sys_clk_pin * 6 PHASE 1.25 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clk_400_0000MHzPLL0_nobuf = PERIOD
+   "clk_400_0000MHzPLL0_nobuf" TS_sys_clk_pin * 6 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2" TS_sys_clk_pin
+   HIGH 50%>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (15.0) was
+   detected for the CLKIN1_PERIOD attribute on PLL
+   "clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst".  This does not
+   match the PERIOD constraint value (66666.7 KHz.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for PLL output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_MAC/Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHME
+   NT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.I_BKEND_CS_REG' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_MAC/Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHME
+   NT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_MAC/Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHME
+   NT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_MAC/Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHME
+   NT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDR
+   E_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_MAC/Ethernet_MAC/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHME
+   NT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/COLLISION_SYNC' has unconnected
+   output pin
+WARNING:NgdBuild:452 - logical net 'fpga_0_MCB3_LPDDR_rzq_pin' has no driver
+WARNING:NgdBuild:452 - logical net 'N28' has no driver
+WARNING:NgdBuild:452 - logical net 'N29' has no driver
+WARNING:NgdBuild:452 - logical net 'N30' has no driver
+WARNING:NgdBuild:452 - logical net 'N31' has no driver
+WARNING:NgdBuild:452 - logical net 'N32' has no driver
+WARNING:NgdBuild:452 - logical net 'N33' has no driver
+WARNING:NgdBuild:452 - logical net 'N34' has no driver
+WARNING:NgdBuild:452 - logical net 'N35' has no driver
+WARNING:NgdBuild:452 - logical net 'N36' has no driver
+WARNING:NgdBuild:452 - logical net 'N37' has no driver
+WARNING:NgdBuild:452 - logical net 'N38' has no driver
+WARNING:NgdBuild:452 - logical net 'N39' has no driver
+WARNING:NgdBuild:452 - logical net 'N40' has no driver
+WARNING:NgdBuild:452 - logical net 'N41' has no driver
+WARNING:NgdBuild:452 - logical net 'N42' has no driver
+WARNING:NgdBuild:452 - logical net 'N43' has no driver
+WARNING:NgdBuild:452 - logical net 'N48' has no driver
+WARNING:NgdBuild:452 - logical net 'N49' has no driver
+WARNING:NgdBuild:452 - logical net 'N50' has no driver
+WARNING:NgdBuild:452 - logical net 'MCB3_LPDDR/mcbx_dram_dqs_n' has no driver
+WARNING:NgdBuild:452 - logical net 'MCB3_LPDDR/mcbx_dram_udqs_n' has no driver
+WARNING:NgdBuild:452 - logical net 'MCB3_LPDDR/zio' has no driver
+WARNING:NgdBuild:478 - clock net mdm_0/bscan_drck1 with clock driver
+   mdm_0/mdm_0/BUFG_DRCK1 drives no clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  34
+
+Total memory usage is 192664 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   7 sec
+
+Writing NGDBUILD log file "system.bld"...

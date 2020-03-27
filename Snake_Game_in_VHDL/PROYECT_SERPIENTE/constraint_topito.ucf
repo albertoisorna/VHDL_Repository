@@ -1,0 +1,12 @@
+NET "clk" LOC = "C9";
+NET "reset" LOC = "N17";
+NET "HS" LOC = "F15";
+NET "VS" LOC = "F14";
+NET "RED" LOC = "H14";
+NET "BLUE" LOC = "G15";
+NET "GRN" LOC = "H15";
+NET "upin" LOC = "V4";
+NET "downin" LOC = "K17";
+NET "leftin" LOC = "D18";
+NET "rightin" LOC = "H13";
+NET "swein" LOC = "H18";

@@ -1,0 +1,606 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: TOP_ITO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP_ITO.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP_ITO"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : TOP_ITO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/contador_sincrono.vhd" in Library work.
+Entity <contador_sincrono> compiled.
+Entity <contador_sincrono> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/comparador.vhd" in Library work.
+Entity <comparador> compiled.
+Entity <comparador> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/ipcore_dir/RAM_SNAKE.vhd" in Library work.
+Entity <RAM_SNAKE> compiled.
+Entity <RAM_SNAKE> (Architecture <RAM_SNAKE_a>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/dibuja.vhd" in Library work.
+Entity <dibuja> compiled.
+Entity <dibuja> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/VGA_DRIVER.vhd" in Library work.
+Entity <VGA_DRIVER> compiled.
+Entity <VGA_DRIVER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/Maquina_Estados.vhd" in Library work.
+Entity <Maquina_Estados> compiled.
+Entity <Maquina_Estados> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/ipcore_dir/MYROM.vhd" in Library work.
+Entity <MYROM> compiled.
+Entity <MYROM> (Architecture <MYROM_a>) compiled.
+Compiling vhdl file "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/TOP_ITO.vhd" in Library work.
+Entity <TOP_ITO> compiled.
+Entity <TOP_ITO> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TOP_ITO> in library <work> (architecture <Behavioral>) with generics.
+	Nbit = 10
+
+Analyzing hierarchy for entity <dibuja> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <VGA_DRIVER> in library <work> (architecture <Behavioral>) with generics.
+	Nbit = 10
+
+Analyzing hierarchy for entity <Maquina_Estados> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <contador_sincrono> in library <work> (architecture <Behavioral>) with generics.
+	Nbit = 10
+
+Analyzing hierarchy for entity <comparador> in library <work> (architecture <Behavioral>) with generics.
+	End_Of_Line = 799
+	End_Of_Pulse = 751
+	End_Of_Screen = 639
+	Nbit = 10
+	Start_Of_Pulse = 655
+
+Analyzing hierarchy for entity <comparador> in library <work> (architecture <Behavioral>) with generics.
+	End_Of_Line = 520
+	End_Of_Pulse = 491
+	End_Of_Screen = 479
+	Nbit = 10
+	Start_Of_Pulse = 489
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <TOP_ITO> in library <work> (Architecture <Behavioral>).
+	Nbit = 10
+WARNING:Xst:2211 - "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/TOP_ITO.vhd" line 217: Instantiating black box module <MYROM>.
+Entity <TOP_ITO> analyzed. Unit <TOP_ITO> generated.
+
+Analyzing Entity <dibuja> in library <work> (Architecture <Behavioral>).
+Entity <dibuja> analyzed. Unit <dibuja> generated.
+
+Analyzing generic Entity <VGA_DRIVER> in library <work> (Architecture <Behavioral>).
+	Nbit = 10
+Entity <VGA_DRIVER> analyzed. Unit <VGA_DRIVER> generated.
+
+Analyzing generic Entity <contador_sincrono> in library <work> (Architecture <Behavioral>).
+	Nbit = 10
+Entity <contador_sincrono> analyzed. Unit <contador_sincrono> generated.
+
+Analyzing generic Entity <comparador.1> in library <work> (Architecture <Behavioral>).
+	End_Of_Line = 799
+	End_Of_Pulse = 751
+	End_Of_Screen = 639
+	Nbit = 10
+	Start_Of_Pulse = 655
+Entity <comparador.1> analyzed. Unit <comparador.1> generated.
+
+Analyzing generic Entity <comparador.2> in library <work> (Architecture <Behavioral>).
+	End_Of_Line = 520
+	End_Of_Pulse = 491
+	End_Of_Screen = 479
+	Nbit = 10
+	Start_Of_Pulse = 489
+Entity <comparador.2> analyzed. Unit <comparador.2> generated.
+
+Analyzing Entity <Maquina_Estados> in library <work> (Architecture <Behavioral>).
+Entity <Maquina_Estados> analyzed. Unit <Maquina_Estados> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dibuja>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/dibuja.vhd".
+WARNING:Xst:1780 - Signal <ejeyforli> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ejeyfor> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 10-bit comparator less for signal <addr_ROM$cmp_lt0000> created at line 83.
+    Found 10-bit comparator less for signal <addr_ROM$cmp_lt0001> created at line 83.
+    Found 10-bit adder for signal <addrb1>.
+    Found 10-bit comparator greater for signal <BLUE$cmp_gt0000> created at line 94.
+    Found 10-bit comparator greater for signal <BLUE$cmp_gt0001> created at line 94.
+    Found 10-bit comparator less for signal <BLUE$cmp_lt0000> created at line 94.
+    Found 10-bit comparator less for signal <BLUE$cmp_lt0001> created at line 94.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <dibuja> synthesized.
+
+
+Synthesizing Unit <Maquina_Estados>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/Maquina_Estados.vhd".
+    Using one-hot encoding for signal <estado_actual>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <button> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <button> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <button>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <button> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <button> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <button> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <button> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 4-bit register for signal <button>.
+    Found 10-bit register for signal <cont>.
+    Found 5-bit register for signal <cont2>.
+    Found 5-bit adder for signal <cont2$addsub0000> created at line 120.
+    Found 5-bit register for signal <crec>.
+    Found 5-bit adder for signal <crec$addsub0000> created at line 207.
+    Found 5-bit comparator equal for signal <Data_in_A$cmp_eq0000> created at line 336.
+    Found 15-bit register for signal <estado_actual>.
+    Found 10-bit adder for signal <p_cont$share0000> created at line 80.
+    Found 5-bit register for signal <regtemp>.
+    Found 5-bit adder for signal <regtemp$share0000> created at line 80.
+    Found 5-bit register for signal <xnext>.
+    Found 5-bit addsub for signal <xnext$addsub0000>.
+    Found 5-bit register for signal <ynext>.
+    Found 5-bit addsub for signal <ynext$addsub0000>.
+    Summary:
+	inferred  39 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Maquina_Estados> synthesized.
+
+
+Synthesizing Unit <contador_sincrono>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/contador_sincrono.vhd".
+    Found 10-bit up counter for signal <cuenta>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <contador_sincrono> synthesized.
+
+
+Synthesizing Unit <comparador_1>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/comparador.vhd".
+    Found 1-bit register for signal <o1>.
+    Found 1-bit register for signal <o2>.
+    Found 1-bit register for signal <o3>.
+    Found 32-bit comparator greater for signal <po1$cmp_gt0000> created at line 73.
+    Found 32-bit comparator greater for signal <po2$cmp_gt0000> created at line 79.
+    Found 32-bit comparator less for signal <po2$cmp_lt0000> created at line 79.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <comparador_1> synthesized.
+
+
+Synthesizing Unit <comparador_2>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/comparador.vhd".
+    Found 1-bit register for signal <o1>.
+    Found 1-bit register for signal <o2>.
+    Found 1-bit register for signal <o3>.
+    Found 32-bit comparator greater for signal <po1$cmp_gt0000> created at line 73.
+    Found 32-bit comparator greater for signal <po2$cmp_gt0000> created at line 79.
+    Found 32-bit comparator less for signal <po2$cmp_lt0000> created at line 79.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <comparador_2> synthesized.
+
+
+Synthesizing Unit <VGA_DRIVER>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/VGA_DRIVER.vhd".
+    Found 1-bit register for signal <clk_pixel>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <VGA_DRIVER> synthesized.
+
+
+Synthesizing Unit <TOP_ITO>.
+    Related source file is "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/TOP_ITO.vhd".
+Unit <TOP_ITO> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 2
+ 5-bit adder                                           : 3
+ 5-bit addsub                                          : 2
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 15
+ 1-bit register                                        : 7
+ 10-bit register                                       : 1
+ 15-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 5
+# Comparators                                          : 13
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 4
+ 32-bit comparator greater                             : 4
+ 32-bit comparator less                                : 2
+ 5-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/RAM_SNAKE.ngc>.
+Reading core <ipcore_dir/MYROM.ngc>.
+Loading core <RAM_SNAKE> for timing and area information for instance <MyRAM>.
+Loading core <MYROM> for timing and area information for instance <mi_rom>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 2
+ 5-bit adder                                           : 3
+ 5-bit addsub                                          : 2
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Comparators                                          : 13
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 4
+ 32-bit comparator greater                             : 4
+ 32-bit comparator less                                : 2
+ 5-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TOP_ITO> ...
+
+Optimizing unit <dibuja> ...
+
+Optimizing unit <comparador_1> ...
+
+Optimizing unit <comparador_2> ...
+
+Optimizing unit <Maquina_Estados> ...
+
+Optimizing unit <VGA_DRIVER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP_ITO, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TOP_ITO.ngr
+Top Level Output File Name         : TOP_ITO
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 340
+#      GND                         : 3
+#      INV                         : 6
+#      LUT1                        : 9
+#      LUT2                        : 16
+#      LUT2_D                      : 4
+#      LUT2_L                      : 6
+#      LUT3                        : 66
+#      LUT3_D                      : 6
+#      LUT3_L                      : 2
+#      LUT4                        : 124
+#      LUT4_D                      : 10
+#      LUT4_L                      : 17
+#      MUXCY                       : 27
+#      MUXF5                       : 11
+#      VCC                         : 3
+#      XORCY                       : 30
+# FlipFlops/Latches                : 81
+#      FDC                         : 21
+#      FDCE                        : 20
+#      FDE                         : 39
+#      FDP                         : 1
+# RAMS                             : 3
+#      RAMB16_S18_S18              : 1
+#      RAMB16_S2_S2                : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 6
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      138  out of   4656     2%  
+ Number of Slice Flip Flops:             81  out of   9312     0%  
+ Number of 4 input LUTs:                266  out of   9312     2%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of BRAMs:                         3  out of     20    15%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                      | Load  |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                      | 84    |
+mi_rom/N1                          | NONE(mi_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp2x2.ram)| 2     |
+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 42    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.081ns (Maximum Frequency: 123.747MHz)
+   Minimum input arrival time before clock: 5.354ns
+   Maximum output required time after clock: 11.993ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.081ns (frequency: 123.747MHz)
+  Total number of paths / destination ports: 2486 / 153
+-------------------------------------------------------------------------
+Delay:               8.081ns (Levels of Logic = 6)
+  Source:            mi_fsm/cont_2 (FF)
+  Destination:       MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mi_fsm/cont_2 to MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.762  mi_fsm/cont_2 (mi_fsm/cont_2)
+     LUT4_D:I0->O          2   0.704   0.451  mi_fsm/Write_A_0_and000114 (mi_fsm/Write_A_0_and000114)
+     LUT4:I3->O            5   0.704   0.637  mi_fsm/Write_A_0_and0001114 (mi_fsm/N17)
+     LUT4:I3->O            1   0.704   0.424  mi_fsm/Addr_A<0>1_SW0 (N49)
+     LUT4_D:I3->O          9   0.704   0.899  mi_fsm/Addr_A<0>1 (mi_fsm/N01)
+     LUT4:I1->O            1   0.704   0.420  mi_fsm/Addr_A<7> (addrA_toRAM<7>)
+     begin scope: 'MyRAM'
+     RAMB16_S18_S18:ADDRA7        0.377          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram
+    ----------------------------------------
+    Total                      8.081ns (4.488ns logic, 3.593ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 57 / 45
+-------------------------------------------------------------------------
+Offset:              5.354ns (Levels of Logic = 4)
+  Source:            leftin (PAD)
+  Destination:       mi_fsm/button_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: leftin to mi_fsm/button_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  leftin_IBUF (leftin_IBUF)
+     LUT3:I0->O            1   0.704   0.499  mi_fsm/button_mux0000<0>9 (mi_fsm/button_mux0000<0>9)
+     LUT4:I1->O            1   0.704   0.455  mi_fsm/button_mux0000<0>17 (mi_fsm/button_mux0000<0>17)
+     LUT4:I2->O            1   0.704   0.000  mi_fsm/button_mux0000<0>33 (mi_fsm/button_mux0000<0>)
+     FDE:D                     0.308          mi_fsm/button_3
+    ----------------------------------------
+    Total                      5.354ns (3.638ns logic, 1.716ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 132 / 5
+-------------------------------------------------------------------------
+Offset:              11.993ns (Levels of Logic = 7)
+  Source:            VGA_driver1/conth/cuenta_7 (FF)
+  Destination:       RED (PAD)
+  Source Clock:      clk rising
+
+  Data Path: VGA_driver1/conth/cuenta_7 to RED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.591   0.824  VGA_driver1/conth/cuenta_7 (VGA_driver1/conth/cuenta_7)
+     LUT4:I3->O            1   0.704   0.595  Represent/BLUE_or000065 (Represent/BLUE_or000065)
+     LUT4:I0->O            2   0.704   0.482  Represent/BLUE_or000084 (Represent/BLUE_or000084)
+     LUT3:I2->O            3   0.704   0.706  Represent/BLUE_or000092 (Represent/BLUE_or0000)
+     LUT4:I0->O            1   0.704   0.455  VGA_driver1/RED22 (VGA_driver1/RED22)
+     LUT3:I2->O            1   0.704   0.424  VGA_driver1/RED51_SW0 (N173)
+     LUT4:I3->O            1   0.704   0.420  VGA_driver1/RED51 (RED_OBUF)
+     OBUF:I->O                 3.272          RED_OBUF (RED)
+    ----------------------------------------
+    Total                     11.993ns (8.087ns logic, 3.906ns route)
+                                       (67.4% logic, 32.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.52 secs
+ 
+--> 
+
+Total memory usage is 314740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

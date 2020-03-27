@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -nodebug -o "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/tb_topito_vga_isim_beh.exe" -prj "C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/tb_topito_vga_beh.prj" "work.tb_topito_vga" -timeprecision_vhdl "1ns" 

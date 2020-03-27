@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Alberto\Documents\ISE_projects\PROYECT_SERPIENTE\TOP_ITO.ncd
+OUTFILE=C:\Users\Alberto\Documents\ISE_projects\PROYECT_SERPIENTE\TOP_ITO.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\Alberto\Documents\ISE_projects\PROYECT_SERPIENTE
+LICENSE=WebPack
+USER_INFO=211250928_0_0_613

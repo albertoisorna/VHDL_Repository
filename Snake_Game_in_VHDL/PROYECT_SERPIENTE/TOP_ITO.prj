@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/RAM_SNAKE.vhd"
+vhdl work "ipcore_dir/MYROM.vhd"
+vhdl work "contador_sincrono.vhd"
+vhdl work "comparador.vhd"
+vhdl work "VGA_DRIVER.vhd"
+vhdl work "Maquina_Estados.vhd"
+vhdl work "dibuja.vhd"
+vhdl work "TOP_ITO.vhd"

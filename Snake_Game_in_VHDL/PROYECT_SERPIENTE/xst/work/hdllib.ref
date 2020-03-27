@@ -1,0 +1,16 @@
+AR contador_sincrono behavioral C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/contador_sincrono.vhd sub00/vhpl01 1481641930
+EN dibuja NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/dibuja.vhd sub00/vhpl06 1481641935
+AR dibuja behavioral C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/dibuja.vhd sub00/vhpl07 1481641936
+AR ram_snake ram_snake_a C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/ipcore_dir/RAM_SNAKE.vhd sub00/vhpl05 1481641934
+AR vga_driver behavioral C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/VGA_DRIVER.vhd sub00/vhpl09 1481641938
+AR top_ito behavioral C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/TOP_ITO.vhd sub00/vhpl15 1481641944
+AR comparador behavioral C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/comparador.vhd sub00/vhpl03 1481641932
+EN myrom NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/ipcore_dir/MYROM.vhd sub00/vhpl12 1481641941
+EN contador_sincrono NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/contador_sincrono.vhd sub00/vhpl00 1481641929
+EN vga_driver NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/VGA_DRIVER.vhd sub00/vhpl08 1481641937
+AR myrom myrom_a C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/ipcore_dir/MYROM.vhd sub00/vhpl13 1481641942
+EN comparador NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/comparador.vhd sub00/vhpl02 1481641931
+EN top_ito NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/TOP_ITO.vhd sub00/vhpl14 1481641943
+EN maquina_estados NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/Maquina_Estados.vhd sub00/vhpl10 1481641939
+EN ram_snake NULL C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/ipcore_dir/RAM_SNAKE.vhd sub00/vhpl04 1481641933
+AR maquina_estados behavioral C:/Users/Alberto/Documents/ISE_projects/PROYECT_SERPIENTE/Maquina_Estados.vhd sub00/vhpl11 1481641940

@@ -1,0 +1,8 @@
+work	"Maquina_Estados.vhd"
+work	"TOP_ITO.vhd"
+work	"VGA_DRIVER.vhd"
+work	"comparador.vhd"
+work	"contador_sincrono.vhd"
+work	"dibuja.vhd"
+work	"ipcore_dir/MYROM.vhd"
+work	"ipcore_dir/RAM_SNAKE.vhd"

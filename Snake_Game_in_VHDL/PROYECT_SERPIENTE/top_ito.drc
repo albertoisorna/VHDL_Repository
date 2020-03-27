@@ -1,0 +1,42 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Dec 13 16:13:38 2016
+
+drc -z TOP_ITO.ncd TOP_ITO.pcf
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA3> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<MyRAM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cst
+   r/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16_RAMB16A>.
+DRC detected 0 errors and 11 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
